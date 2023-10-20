@@ -1,10 +1,11 @@
 const mysql = require('mysql2/promise');
 
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'SupSen@i115',
+  host: 'museus.mysql.database.azure.com',
+  user: 'Douglas',
+  password: 'batata5.',
   database: 'museus',
+  ssl:{mode: 'require'}
 });
 
 // pool.connect((err) => {
