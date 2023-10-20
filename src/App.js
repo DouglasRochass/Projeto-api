@@ -7,7 +7,7 @@ const App = () => {
   const [obras, setObras] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3307/api/museus')
+    axios.get('https://apimuseu-nine.vercel.app/api/museus')
       .then(response => {
         setMuseus(response.data);
       })
@@ -17,7 +17,7 @@ const App = () => {
   }, []);
 
   const fetchObras = (museuId) => {
-    axios.get(`http://localhost:3307/api/obras/${museuId}`)
+    axios.get(`https://apimuseu-nine.vercel.app/api/obras/${museuId}`)
       .then(response => {
         setObras(response.data);
       })
