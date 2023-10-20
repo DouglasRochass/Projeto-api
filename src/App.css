@@ -1,0 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.gradient-beige {
+    background-color: #aa9c7e;
+}
+.min-h-screen {
+    background-color: #bcb29b;
+}
+h1 {
+    color: white;
+}
